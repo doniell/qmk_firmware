@@ -28,7 +28,7 @@ enum layers {
   _GAME,
   _MOD3,
   _MOD4,
-  _CSTSFT,
+  _MOD5,
   _ADJUST
 };
 
@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,    KC_Q,    KC_W,    KC_E,        KC_R,      KC_T,      _______,    _______, DE_Z,   KC_U,      KC_I,        KC_O,    KC_P,    DE_UDIA,
     MO(_MOD3), KC_A,    KC_S,    KC_D,        KC_F,      KC_G,      _______,    _______, KC_H,   KC_J,      KC_K,        KC_L,    DE_ODIA, MO(_MOD3),
     KC_LSFT,   DE_Y,    KC_X,    KC_C,        KC_V,      KC_B,                           KC_N,   KC_M,      KC_COMM,     KC_DOT,  DE_MINS, KC_RSFT,
-    KC_LCTL,   KC_LGUI, KC_LALT, MO(_CSTSFT), MO(_MOD4),            _______,    _______,         MO(_MOD4), MO(_ADJUST), KC_RALT, KC_RGUI, KC_RCTL,
+    KC_LCTL,   KC_LGUI, KC_LALT, MO(_MOD5),   MO(_MOD4),            _______,    _______,         MO(_MOD4), MO(_ADJUST), KC_RALT, KC_RGUI, KC_RCTL,
                                               KC_SPC,    KC_BSPC,   _______,    _______, KC_ENT, KC_SPC
   ),
 
@@ -57,7 +57,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,    KC_K,    KC_DOT,  KC_O,        KC_COMM,   DE_Y,    _______,    _______, KC_V,      KC_G,      KC_C,         KC_L,    DE_F,    DE_Z,
     MO(_MOD3), KC_H,    KC_A,    KC_E,        KC_I,      KC_U,    _______,    _______, KC_D,      KC_T,      KC_R,         KC_N,    KC_S,    MO(_MOD3),
     KC_LSFT,   KC_X,    KC_Q,    DE_ADIA,     DE_UDIA,   DE_ODIA,                      KC_B,      KC_P,      KC_W,         KC_M,    KC_J,    KC_RSFT,
-    KC_LCTL,   KC_LGUI, KC_LALT, MO(_CSTSFT), MO(_MOD4),          _______,    _______,            MO(_MOD4), MO(_ADJUST),  KC_RALT, KC_RGUI, KC_RCTL,
+    KC_LCTL,   KC_LGUI, KC_LALT, MO(_MOD5),   MO(_MOD4),          _______,    _______,            MO(_MOD4), MO(_ADJUST),  KC_RALT, KC_RGUI, KC_RCTL,
                                               KC_SPC,    KC_BSPC, _______,    _______, KC_ENT,    KC_SPC
   ),
 
@@ -66,7 +66,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,    KC_Q,    KC_W,    KC_E,        KC_R,         KC_T, _______,    _______, DE_Z,      KC_U,      KC_I,        KC_O,    KC_P,    KC_DEL,
     MO(_MOD3), KC_A,    KC_S,    KC_D,        KC_F,         KC_G, _______,    _______, KC_H,      KC_J,      KC_K,        KC_L,    DE_HASH, MO(_MOD3),
     KC_LSFT,   DE_Y,    KC_X,    KC_C,        KC_V,         KC_B,                      KC_N,      KC_M,      KC_COMM,     KC_DOT,  DE_MINS, KC_RSFT,
-    KC_LGUI,   KC_LALT, KC_LCTL, MO(_CSTSFT), MO(_MOD4),          _______,    _______,            MO(_MOD4), MO(_ADJUST), KC_RCTL, KC_RALT, KC_PENT,
+    KC_LGUI,   KC_LALT, KC_LCTL, MO(_MOD5),   MO(_MOD4),          _______,    _______,            MO(_MOD4), MO(_ADJUST), KC_RCTL, KC_RALT, KC_PENT,
                                               KC_SPC,    KC_BSPC, _______,    _______, KC_ENT,    KC_SPC
     ),
 
@@ -75,7 +75,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,    KC_Q,    KC_W,    KC_E,        KC_R,      KC_T,    _______,    _______, DE_Y,      KC_U,      KC_I,        KC_O,    KC_P,    KC_DEL,
     KC_TAB,    KC_A,    KC_S,    KC_D,        KC_F,      KC_G,    _______,    _______, KC_H,      KC_J,      KC_K,        KC_L,    DE_SCLN, KC_ENT,
     KC_LSFT,   DE_Z,    KC_X,    KC_C,        KC_V,      KC_B,                         KC_N,      KC_M,      KC_COMM,     KC_DOT,  KC_UP,   KC_RSFT,
-    KC_LCTL,   KC_LGUI, KC_LALT, MO(_CSTSFT), MO(_MOD4),          _______,    _______,            MO(_MOD4), MO(_ADJUST), KC_LEFT, KC_DOWN, KC_RGHT,
+    KC_LCTL,   KC_LGUI, KC_LALT, MO(_MOD5),   MO(_MOD4),          _______,    _______,            MO(_MOD4), MO(_ADJUST), KC_LEFT, KC_DOWN, KC_RGHT,
                                               KC_SPC,    KC_BSPC, _______,    _______, KC_ENT,    KC_SPC
     ),
 
@@ -99,7 +99,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
 
-  [_CSTSFT] = LAYOUT_moonlander(
+  [_MOD5] = LAYOUT_moonlander(
     _______, KC_F1,   KC_F2,      KC_F3,   KC_F4,      KC_F5,   _______,    _______, KC_F6,     KC_F7,      KC_F8,      KC_F9,      KC_F10,  KC_F11, 
     _______, _______, UC(0x2022), _______, UC(0x2013), _______, _______,    _______, _______,   UC(0x201E), UC(0x201C), UC(0x201D), _______, KC_F12, 
     _______, _______, _______,    _______, _______,    _______, _______,    _______, _______,   UC(0x201A), UC(0x2018), UC(0x2019), DE_SS,   _______,
@@ -165,7 +165,7 @@ layer_state_t default_layer_state_set_user(layer_state_t state){
     0b001000,   //_GAME,
     0b000000,   //_MOD3,
     0b000000,   //_MOD4,
-    0b000000,   //_CSTSFT,
+    0b000000,   //_MOD5,
     0b000000    //_ADJUST
   };
 
